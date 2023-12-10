@@ -18,7 +18,7 @@ F_USB        = $(F_CPU)
 OPTIMIZATION = s
 TARGET       = Keyboard
 SRC          = $(TARGET).c Descriptors.c $(LUFA_SRC_USB)
-LUFA_PATH    = $(USERPROFILE)\Downloads\lufa-master\LUFA
+LUFA_PATH    = $(USERPROFILE)\Downloads\lufa
 CC_FLAGS     = -DUSE_LUFA_CONFIG_HEADER -IConfig/
 LD_FLAGS     =
 
