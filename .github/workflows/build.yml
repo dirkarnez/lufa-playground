@@ -14,6 +14,13 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+      
+      - shell: cmd
+        run: |
+          cd %USERPROFILE%\Downloads &&^
+          git clone https://github.com/abcminiuser/lufa.git &&^
+          cd lufa &&^
+          git checkout LUFA-210130
           
       # - shell: cmd
       #   run: |
