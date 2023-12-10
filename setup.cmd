@@ -28,5 +28,3 @@ cd /d "%TEMP%" && ^
 C:\PROGRA~1\7-Zip\7z.exe x Atmel.ATmega_DFP.2.1.506.atpack -o"%USERPROFILE%\Downloads\Atmel.ATmega_DFP.2.1.506" && ^
 del Atmel.ATmega_DFP.2.1.506.atpack
 )
-
-pause
