@@ -1,6 +1,7 @@
 @REM run as Administrator
 @echo off
 
+set CURRENT=%cd%
 if not exist "%USERPROFILE%\Downloads\PortableGit" (
 cd /d "%TEMP%" && ^
 %SystemRoot%\System32\curl.exe https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/PortableGit-2.42.0.2-64-bit.7z.exe -L -O -J  && ^
@@ -28,3 +29,5 @@ cd /d "%TEMP%" && ^
 C:\PROGRA~1\7-Zip\7z.exe x Atmel.ATmega_DFP.2.1.506.atpack -o"%USERPROFILE%\Downloads\Atmel.ATmega_DFP.2.1.506" && ^
 del Atmel.ATmega_DFP.2.1.506.atpack
 )
+
+cd /d "%CURRENT%"
